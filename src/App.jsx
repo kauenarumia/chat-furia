@@ -23,7 +23,7 @@ function App() {
   };
 
   const obterRespostaDaIA = async (pergunta) => {
-    const apiKey = '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'; // Troque pela sua chave
+    const apiKey = import.meta.env.VITE_OPENAI_API_KEY; // Troque pela sua chave
     const url = 'https://api.openai.com/v1/chat/completions';
 
     const headers = {
